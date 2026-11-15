@@ -18,7 +18,7 @@ label{display:flex;gap:8px;align-items:center;font-size:13.5px;color:#6f6156;mar
 <label><input id="rem" type="checkbox" checked> Remember on this device</label>
 <button id="go">Open</button><div class="err" id="err"></div></form>
 <script>
-const SALT="ssU261pkagCjXAZVGBRlhg==",IT=600000;
+const SALT="c2DE9sX6TGrBxHVvekbj5g==",IT=600000;
 const b64=u=>btoa(String.fromCharCode(...new Uint8Array(u))),ub=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
 async function open_(raw){const key=await crypto.subtle.importKey("raw",ub(raw),"AES-GCM",false,["decrypt"]);
   const r=await fetch("app.enc",{cache:"no-cache"});const b=new Uint8Array(await r.arrayBuffer());
